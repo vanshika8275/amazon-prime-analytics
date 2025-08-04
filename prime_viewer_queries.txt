@@ -1,0 +1,19 @@
+-- Total watch time by gender
+SELECT gender, SUM(watch_time) AS total_watch_time
+FROM prime_viewers
+GROUP BY gender;
+
+-- Genre preferences by user
+SELECT user_id, genre, COUNT(*) AS total_views
+FROM prime_viewers
+GROUP BY user_id, genre
+ORDER BY total_views DESC;
+
+-- Device usage distribution
+SELECT device_type, COUNT(*) AS users
+FROM prime_viewers
+GROUP BY device_type;
+
+-- Time to first watch after sign-up
+SELECT user_id, DATEDIFF(first_watch_date, signup_date) AS days_to_first_watch
+FROM prime_viewers;
