@@ -18,7 +18,7 @@ To analyze user behavior on Amazon Prime — including:
 - Created actionable dashboards for viewer segmentation
 
 ## 📸 Screenshots
-![Amazon Prime Dashboard](amazon_prime_dashboard.png)
+![Amazon Prime Dashboard](amazon_dashboard.png.jpg)
 
 ## 📄 Files Included
 - `prime_viewer_queries.sql` – SQL queries used
